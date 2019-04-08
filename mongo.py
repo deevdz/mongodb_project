@@ -27,7 +27,9 @@ coll = conn[DBS_NAME][COLLECTION_NAME]
 
 ##coll.remove({'first':'douglas'})
 
-coll.update_many({'nationality': 'american'}, {'$set': {'hair_color':'multi-coloured'}})
+##coll.update_one({'nationality': 'american'}, {'$set': {'hair_color':'multi-coloured'}})
+
+##coll.update_many({'nationality': 'american'}, {'$set': {'hair_color':'multi-coloured'}})
 
 documents = coll.find({'nationality':'american'})
 
